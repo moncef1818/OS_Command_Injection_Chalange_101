@@ -2,7 +2,7 @@ services:
   pingger:
     build: .
     ports:
-      - "8080:8080"
+      - "9001:8080"  
     container_name: pingger-challenge
     environment:
       - SPRING_PROFILES_ACTIVE=prod
