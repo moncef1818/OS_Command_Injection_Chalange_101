@@ -2,7 +2,7 @@ services:
   pingger:
     build: .
     ports:
-      - "8083:8080"  # App runs on localhost:8083
+      - "8084:8080"  # Changed to 8084
     container_name: pingger-challenge
     environment:
       - SPRING_PROFILES_ACTIVE=prod
