@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pingger - Network Ping Tool</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="logo">
+            <h1>🏓 Pingger</h1>
+            <p class="tagline">Network Connectivity Testing Tool</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="ping-form">
+            <h2>Test Network Connectivity</h2>
+            <form id="pingForm">
+                <div class="input-group">
+                    <label for="target">IP Address or Hostname:</label>
+                    <input type="text" id="target" name="target" placeholder="e.g., 8.8.8.8 or google.com" required>
+                </div>
+                <button type="submit" class="ping-btn">🚀 Ping Now</button>
+            </form>
+        </div>
+
+        <div class="results">
+            <h3>Ping Results:</h3>
+            <div id="output" class="output-box">
+                Results will appear here...
+            </div>
+            <button id="clearBtn" class="clear-btn">Clear Results</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>⚠️ For educational purposes only</p>
+    </footer>
+</div>
+
+<script src="/script.js"></script>
+</body>
+</html>
